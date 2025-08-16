@@ -32,12 +32,8 @@ retail decisions
 - *Algorithm / task:* Regression (multiple regression - multiple features) (univariate regression - predict a single value)
 - *Learning technique:* Batch learning
 ##### 5. How performance should be measured?
-- Using RMSE (root mean square error), it measure how much error the system makes in its predictions. RMSE uses $l_{2}$ norm *(euclidean distance, used in Ridge normalization).*
-
-```math
-RMSE(\bold{X}, h) =\sqrt{\frac{1}{m}\sum_{i=1}^{m}(h(\bold{x}^{(i)}) -y^{(i)})^{2}}
-```
-
+- Using RMSE (root mean square error), it measure how much error the system makes in its predictions. RMSE uses $l_{2}$ norm *(euclidean distance, used in Ridge normalization).*\
+$$RMSE(\bold{X}, h) =\sqrt{\frac{1}{m}\sum_{i=1}^{m}(h(\bold{x}^{(i)}) -y^{(i)})^{2}}$$
 where:
     - $m$ is the number of instances in the dataset.
     - $\mathbf{x}$ is a vector of all the feature values.
