@@ -32,10 +32,8 @@ retail decisions
 - *Algorithm / task:* Regression (multiple regression - multiple features) (univariate regression - predict a single value)
 - *Learning technique:* Batch learning
 ##### 5. How performance should be measured?
-- Using RMSE (root mean square error), it measure how much error the system makes in its predictions. RMSE uses $l_{2}$ norm *(euclidean distance, used in Ridge normalization).*
-$$
-RMSE(\bold{X}, h) =\sqrt{\frac{1}{m}\sum_{i=1}^{m}(h(\bold{x}^{(i)}) -y^{(i)})^{2}}
-$$
+- Using RMSE (root mean square error), it measure how much error the system makes in its predictions. RMSE uses $l_{2}$ norm *(euclidean distance, used in Ridge normalization).*\
+$$RMSE(\bold{X}, h) =\sqrt{\frac{1}{m}\sum_{i=1}^{m}(h(\bold{x}^{(i)}) -y^{(i)})^{2}}$$
 where:
     - $m$ is the number of instances in the dataset.
     - $\bold{x}$ is a vector of all the feature values.
@@ -43,10 +41,8 @@ where:
     - $\bold{X}$ is a matrix containing all the feature values.
     - $h$ is the hypothesis, in other words the predicted value as well knows as $\hat{y}$
 
-- If there are many predicted $\hat{y}$ outliers, you may consider using MAE mean absolute error, it uses $l_1 norm$ (manhattan distance, used in lasso norm)
-
-$$
-MAE(\bold{X}, h) = \frac{1}{m} \sum_{i=1}^{m} \left|h(\bold{x}^{(i)}) - y^{(i)}\right|$$
+- If there are many predicted $\hat{y}$ outliers, you may consider using MAE mean absolute error, it uses $l_1 norm$ (manhattan distance, used in lasso norm).\
+$$MAE(\bold{X}, h) = \frac{1}{m} \sum_{i=1}^{m} \left|h(\bold{x}^{(i)}) - y^{(i)}\right|$$
 ##### 6.
 #####
 #####
