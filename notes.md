@@ -35,15 +35,15 @@ retail decisions
 - Using RMSE (root mean square error), it measure how much error the system makes in its predictions. RMSE uses $l_{2}$ norm *(euclidean distance, used in Ridge normalization).*
 
 ```math
-RMSE(X, h) =\sqrt{\frac{1}{m}\sum_{i=1}^{m}(h(\bold{x}^{(i)}) -y^{(i)})^{2}}
+RMSE(X, h) =\sqrt{\frac{1}{m}\sum_{i=1}^{m}(h(x^{(i)}) -y^{(i)})^{2}}
 ```
 
 where:
-    - $m$ is the number of instances in the dataset.
-    - $x$ is a vector of all the feature values.
-    - $y$ is the desired output.
-    - $X$ is a matrix containing all the feature values.
-    - $h$ is the hypothesis, in other words the predicted value as well knows as $\hat{y}$
+- $m$ is the number of instances in the dataset.
+- $x$ is a vector of all the feature values.
+- $y$ is the desired output.
+- $X$ is a matrix containing all the feature values.
+- $h$ is the hypothesis, in other words the predicted value as well knows as $\hat{y}$
 
 - If there are many predicted $\hat{y}$ outliers, you may consider using MAE mean absolute error, it uses $l_1 norm$ (manhattan distance, used in lasso norm).
 
